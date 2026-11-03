@@ -1,0 +1,336 @@
+body {
+    font-family: 'Inter',serif;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.hero-background {
+  background-image: url("skincareimages/skincarepic.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  min-height: 640px;
+  display: flex;
+  background-position: 50% 30%;
+  object-fit: cover;
+}
+.nav-logo {
+  position: absolute;
+  top: 2rem;
+  left: 2.7rem;
+  width: 140px;
+}
+.uppercase-text {
+  position: absolute;
+  top: 62%;
+  left: 4%;
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 560;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.88;
+}
+.hero-text {
+  position: absolute;
+  top: 66%;
+  left: 4%;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display',serif;
+  color: #000;
+  font-size: 6.4rem;
+  line-height: 97px;
+  font-weight: 300;
+}
+.top-heading {
+  margin-top: 7.5rem;
+  margin-left: 3rem;
+  font-size: 3.1rem;
+  margin-bottom: 16px;
+  font-family: 'Playfair Display',serif;
+  color: #000;  
+  font-weight: 250;
+}
+.links-container {
+  display: flex;
+  gap: 3rem;
+}
+.divide-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.filter-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 3rem;
+  background-color: #F7F4EE;
+  padding: 1.8rem 3.2rem; 
+}
+.filter-link {
+  text-decoration: none;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: #6b7b85;
+  line-height: 28px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.filter-link:focus{
+  border: 2px solid #0000006b;
+  font-weight: 600;
+  padding: 5px 10px;
+  color: #000000e7; 
+}
+.filter-link:hover {
+  color: #000;
+}
+.filter-link.active {
+  color: #000;
+  font-weight: 400;
+}
+.subheading {
+  font-family: 'Playfair Display',serif;
+  color: #000000b3; 
+  margin-left: 3rem;
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+}
+.first-container {
+  margin: 2rem 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.845);
+  border-radius: 2px;
+  background-color: #f9f9f9; 
+  display: flex;
+  justify-content:space-around;
+  align-items: stretch;
+  gap: 2rem;
+  position: relative;
+}
+.product-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  transition: all 0.4s ease;
+  background-color: #f9f9f9;
+  position: relative;
+  padding: 1rem;
+  border-right: 2px solid rgba(0,0,0,0.2);
+}
+
+@media (max-width: 600px) {
+  .first-container {
+    flex-direction: column;
+  }
+  .product-card {
+    border-right: none;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+  }
+  .first-container .product-card:last-child {
+    border-bottom: none;
+  }
+  .gridimage {
+    width: 200px;
+    height: 200px;
+  }
+  .hero-background {
+    height: 100vh;
+    min-height: auto;
+    background-position: center;
+  }
+  .hero-text {
+    font-size: 3rem;
+    line-height: 42px;
+    left: 5%;
+    right: 5%;
+  }
+  .uppercase-text {
+    left: 5%;
+    font-size: 12px;
+  }
+  .nav-logo {
+    width: 110px;
+    left: 1rem;
+    top: 1.5rem;
+  }
+
+}
+
+.gridimage {
+  width: 250px;
+  height: 230px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+.hero-background {
+  background-attachment: scroll;
+}
+.product-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0;
+  font-family: 'Inter', sans-serif;
+}
+.product-card h3 {
+  color: #000;
+  font-weight: 600;
+  margin: 3px;
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  line-height: 44px;
+}
+.product-card:hover {
+  transform: scale(1.0);
+  transition: all 0.3s ease;
+}
+.product-card:hover .gridimage {
+  transform: scale(1.1);
+}
+
+#last-product-container {
+  margin: 0;
+}
+#last-gridimage {
+  margin: 0;
+}
+.second-subheading ,.third-subheading {
+  margin-top: 6rem;
+}
+.finalheading {
+  font-size: 2.8rem;
+  margin-left:7rem;
+  margin-top: 6rem;
+  font-weight: 550;
+  line-height: 48px;
+  margin-bottom: 0;
+  font-family: 'Playfair Display', serif ;
+}
+.finalpara {
+  margin-left:7rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  opacity: 0.7;
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  font-size: 16px;
+  line-height: 26px; 
+}
+.socialbtn {
+  padding: 20px;
+  margin-left:7rem;
+  margin-top: 2rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 3rem;
+  cursor: pointer; 
+}
+
+.socialbtn:hover {
+  opacity: 0.8;
+}
+.htmlentity{
+  margin-left: 16px; 
+}
+
+@media(max-width: 1000px) {
+  .top-heading {
+    font-size: 2.4rem;
+    margin-left: 1rem;
+    font-weight: 500;
+  }
+  .filter-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 2rem;
+    background-color: #F7F4EE;
+    padding: 1.6rem 2.5rem;    
+  }
+  .subheading {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+  }
+  .first-container {
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: stretch;
+    gap: 0.5rem;
+    position: relative;
+  }
+  .product-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0.2rem;
+  }
+  .product-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'Inter', sans-serif; 
+  }
+  .product-card h3 {
+    color: #000;
+    font-weight: 580;
+    margin: 3px;
+    font-family: 'Playfair Display', serif;  
+    font-size: 23px;
+    line-height: 40px;
+  }
+  .finalheading {
+    font-size: 2.6rem;
+    margin-left:1rem;
+    font-weight: 500;
+    line-height: 45px;
+    margin-bottom: 0;
+    font-family: 'Playfair Display', serif ;
+  }
+  .finalpara {
+    margin-left: 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+  }
+  .socialbtn {
+    padding: 20px;
+    margin-left:4rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+  
